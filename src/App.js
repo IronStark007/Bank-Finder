@@ -1,6 +1,6 @@
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import StockList from './components/StockList/StockList';
+import BankList from './components/BankList/BankList';
 import { useEffect, useState } from 'react';
 import data from './data.json';
 
@@ -19,7 +19,7 @@ const App = () => {
   return (
     <>
       <Header bankData={bankData} setFilterData={setFilterData} setBankData={setBankData} />
-      <StockList filterData={filterData} loading={loading} />
+      <BankList filterData={filterData} loading={loading} />
       <Footer />
     </>
   );

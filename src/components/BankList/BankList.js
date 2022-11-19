@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import './StockList.css';
+import './BankList.css';
 
 
-const StockList = ({ filterData, loading }) => {
+const BankList = ({ filterData, loading }) => {
 
   const [headerData, setHeaderData] = useState([]);
 
@@ -42,4 +42,4 @@ const StockList = ({ filterData, loading }) => {
   );
 }
 
-export default StockList;
+export default BankList;
