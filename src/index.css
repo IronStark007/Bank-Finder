@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+.load {
+  width: 40px;
+  height: 40px;
+  margin: 110px auto 0;
+  border: solid 3px #275777;
+  border-radius: 50%;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  -webkit-transition: all 0.5s ease-in;
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 1.0s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+
+  transition: all 0.5s ease-in;
+  animation-name: rotate;
+  animation-duration: 1.0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@media screen and (max-width:800px) {
+  .load {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width:520px) {
+  .load {
+    width: 25px;
+    height: 25px;
+  }
+}

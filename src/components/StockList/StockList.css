@@ -1,0 +1,71 @@
+.bank-list {
+    width: 90%;
+    margin: 40px auto;
+    margin-bottom: 110px;
+    transition: all 0.3s ease;
+    color: #275777;
+}
+
+.bank-list,
+tr {
+    border: 1px solid #28262645;
+    border-collapse: collapse;
+}
+
+.bank-list thead {
+    font-size: 25px;
+    font-weight: 600;
+    height: 60px;
+}
+
+.bank-list .bank-card {
+    font-size: 20px;
+    height: 70px;
+}
+
+td {
+    padding: 0 20px;
+}
+
+
+@media screen and (max-width:800px) {
+    .bank-list {
+        width: 95%;
+        text-align: center;
+    }
+
+    td {
+        padding: 0 10px;
+    }
+
+    .bank-list thead {
+        font-size: 20px;
+        height: 50px;
+    }
+
+    .bank-list .bank-card {
+        font-size: 15px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width:520px) {
+
+    .bank-list {
+        width: 100%;
+    }
+
+    .bank-list thead {
+        font-size: 15px;
+        height: 40px;
+    }
+
+    td {
+        padding: 0 5px;
+    }
+
+    .bank-list .bank-card {
+        font-size: 12px;
+        height: 20px;
+    }
+}
